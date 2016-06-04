@@ -43,6 +43,11 @@ namespace CdKeyGenerator
             keyRX = "";
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private string Id_c(string[] arr)
         {
             for (int i = 0; i < arr.Length; i++)

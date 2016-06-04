@@ -36,12 +36,13 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.IdX = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.KeyX = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // create_button
             // 
-            this.create_button.Location = new System.Drawing.Point(51, 279);
+            this.create_button.Location = new System.Drawing.Point(51, 293);
             this.create_button.Name = "create_button";
             this.create_button.Size = new System.Drawing.Size(463, 33);
             this.create_button.TabIndex = 0;
@@ -56,7 +57,7 @@
             this.Id_textBox.MaxLength = 8;
             this.Id_textBox.Name = "Id_textBox";
             this.Id_textBox.ReadOnly = true;
-            this.Id_textBox.Size = new System.Drawing.Size(207, 20);
+            this.Id_textBox.Size = new System.Drawing.Size(226, 20);
             this.Id_textBox.TabIndex = 1;
             // 
             // Key_textBox
@@ -95,10 +96,10 @@
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.IdX,
             this.KeyX});
-            this.dataGridView1.Location = new System.Drawing.Point(51, 104);
+            this.dataGridView1.Location = new System.Drawing.Point(51, 103);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(463, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(463, 184);
             this.dataGridView1.TabIndex = 5;
             // 
             // IdX
@@ -113,11 +114,22 @@
             this.KeyX.Name = "KeyX";
             this.KeyX.ReadOnly = true;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(51, 332);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(463, 33);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "Add";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(537, 324);
+            this.ClientSize = new System.Drawing.Size(537, 376);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.Key_label);
             this.Controls.Add(this.Id_label);
@@ -143,6 +155,7 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn IdX;
         private System.Windows.Forms.DataGridViewTextBoxColumn KeyX;
+        private System.Windows.Forms.Button button1;
     }
 }
 
